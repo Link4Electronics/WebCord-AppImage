@@ -2,7 +2,7 @@
 
 set -eu
 
-ARCH=$(uname -m)
+#ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
