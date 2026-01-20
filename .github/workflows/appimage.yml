@@ -1,7 +1,7 @@
 name: Anylinux-AppImage
 concurrency:
   group: build-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 on:
   schedule:
     - cron: "0 7 1/21 * *" # We default to rebuilding every 21 days, change this to your liking
