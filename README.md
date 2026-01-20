@@ -1,9 +1,9 @@
-# TEMPLATE-AppImage 🐧
+# WebCord-AppImage 🐧
 
-[![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/TEMPLATE-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/TEMPLATE-AppImage/releases/latest)
-[![CI Build Status](https://github.com//pkgforge-dev/TEMPLATE-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/TEMPLATE-AppImage/releases/latest)
+[![GitHub Downloads](https://img.shields.io/github/downloads/Link4Electronics/WebCord-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/Link4Electronics/WebCord-AppImage/releases/latest)
+[![CI Build Status](https://github.com//Link4Electronics/WebCord-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/TEMPLATE-AppImage/releases/latest)
 
-* [Latest Stable Release](https://github.com/pkgforge-dev/TEMPLATE-AppImage/releases/latest)
+* [Latest Stable Release](https://github.com/Link4Electronics/WebCord-AppImage/releases/latest)
 
 ---
 
