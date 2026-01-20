@@ -7,7 +7,8 @@ ARCH=$(uname -m)
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm nss \
-    pipewire-jack
+    pipewire-jack  \
+    pipewire-pulse
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
