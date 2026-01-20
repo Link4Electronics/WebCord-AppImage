@@ -23,6 +23,6 @@ chown -R nobody:nobody electron39-bin
 cd electron39-bin
 # Fix the duplicate aarch64 entry in the PKGBUILD
 #sed -i '/^arch=(/ s/\x27aarch64\x27//2' PKGBUILD
-makepkg -si --noconfirm
+sudo -u nobody makepkg -si --noconfirm
 #MAKEPKG_ALLOW_ROOT=1 makepkg -si --noconfirm
 fi
