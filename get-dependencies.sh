@@ -16,6 +16,8 @@ get-debloated-pkgs --add-common --prefer-nano
 if [ "$ARCH" = 'x86_64' ]; then
 make-aur-package electron39-bin
 else
+usermod -p '*' nobody
+chage -E -1 -m 0 -M 99999 -I -1 nobody
 echo "nobody ALL=(ALL) NOPASSWD: /usr/bin/pacman" >> /etc/sudoers
 # If the application needs to be manually built that has to be done down here
 git clone https://aur.archlinux.org/electron39-bin.git
