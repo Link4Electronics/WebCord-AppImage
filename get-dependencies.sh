@@ -6,13 +6,13 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm electron39 #PACKAGESHERE
+pacman -Syu --noconfirm #PACKAGESHERE
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
 
 # Comment this out if you need an AUR package
-make-aur-package #electron39-bin
+make-aur-package --chaotic-aur webcord
 
 # If the application needs to be manually built that has to be done down here
