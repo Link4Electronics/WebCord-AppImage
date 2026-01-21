@@ -15,7 +15,7 @@ export DEPLOY_OPENGL=1
 export DEPLOY_VULKAN=1
 
 # Deploy dependencies
-quick-sharun pkg/usr/bin/webcord
+quick-sharun /usr/bin/webcord
 
 # Additional changes can be done in between here
 
