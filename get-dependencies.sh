@@ -18,5 +18,6 @@ if [ "$ARCH" = 'x86_64' ]; then
 make-aur-package --chaotic-aur webcord
 else
 make-aur-package electron39-bin
+make-aur-package
 fi
 # If the application needs to be manually built that has to be done down here
