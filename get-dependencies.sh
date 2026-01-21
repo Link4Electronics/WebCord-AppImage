@@ -17,7 +17,7 @@ get-debloated-pkgs --add-common --prefer-nano
 if [ "$ARCH" = 'x86_64' ]; then
 make-aur-package --chaotic-aur webcord
 else
-make-aur-package electron39-bin webcord
-#make-aur-package
+make-aur-package electron39-bin
+make-aur-package webcord
 fi
 # If the application needs to be manually built that has to be done down here
