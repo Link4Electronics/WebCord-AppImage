@@ -8,7 +8,7 @@ export ARCH VERSION
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.bg.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
-export ICON=/usr/share/icons/hicolor/512x512/apps/webcord.png
+export ICON=/usr/lib/webcord/sources/assets/icons/app.png
 export DESKTOP=webcord.desktop
 export DEPLOY_PIPEWIRE=1
 export DEPLOY_OPENGL=1
