@@ -11,9 +11,8 @@ fi
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm nss \
-    pipewire-jack \
-    pipewire
+pacman -Syu --noconfirm pipewire \
+    pipewire-jack
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
