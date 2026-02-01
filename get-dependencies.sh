@@ -7,7 +7,6 @@ case "$ARCH" in # they use AMD64 and ARM64 for the deb links
 	x86_64)  deb_arch=amd64;;
 	aarch64) deb_arch=arm64;;
 esac
-#DEB_LINK="https://github.com/SpacingBat3/WebCord/releases/download/v4.12.1/webcord_4.12.1_$deb_arch.deb"
 DEB_LINK=$(wget https://api.github.com/repos/SpacingBat3/WebCord/releases -O - \
       | sed 's/[()",{} ]/\n/g' | grep -o -m 1 "https.*$deb_arch.deb")
 echo "$DEB_LINK" | awk -F'/' '{gsub(/^v/, "", $(NF-1)); print $(NF-1); exit}' > ~/version
@@ -15,7 +14,7 @@ echo "$DEB_LINK" | awk -F'/' '{gsub(/^v/, "", $(NF-1)); print $(NF-1); exit}' > 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
-	pipewire 	  \
+	pipewire-audio \
     pipewire-jack
 
 echo "Installing debloated packages..."
@@ -33,9 +32,6 @@ if ! wget --retry-connrefused --tries=30 "$DEB_LINK" -O /tmp/app.deb 2>/tmp/down
 	cat /tmp/download.log
 	exit 1
 fi
-
-#VERSION="$(git ls-remote --tags --sort="v:refname" https://github.com/SpacingBat3/WebCord | tail -n1 | sed 's/.*\///; s/\^{}//; s/^v//')"
-#echo "$VERSION" > ~/version
 
 ar xvf /tmp/app.deb
 tar -xvf ./data.tar.zst
