@@ -40,5 +40,3 @@ mv -v ./usr ./AppDir
 cp -v ./AppDir/share/applications/webcord.desktop            ./AppDir
 cp -v ./AppDir/share/pixmaps/webcord.png  ./AppDir/.DirIcon
 cp -v ./AppDir/share/pixmaps/webcord.png  ./AppDir
-
-#awk -F'/' '/Location:/{print $(NF-1); exit}' /tmp/download.log > ~/version
