@@ -3,11 +3,11 @@
 set -eu
 
 ARCH=$(uname -m)
-if [ "$ARCH" = 'x86_64' ]; then
-DEB_LINK="https://github.com/SpacingBat3/WebCord/releases/download/v4.12.1/webcord_4.12.1_amd64.deb"
-else
-DEB_LINK="https://github.com/SpacingBat3/WebCord/releases/download/v4.12.1/webcord_4.12.1_arm64.deb"
-fi
+case "$ARCH" in # they use AMD64 and ARM64 for the deb links
+	x86_64)  deb_arch=x64;;
+	aarch64) deb_arch=arm64;;
+esac
+DEB_LINK="https://github.com/SpacingBat3/WebCord/releases/download/v4.12.1/webcord_4.12.1_$ARCH.deb"
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
