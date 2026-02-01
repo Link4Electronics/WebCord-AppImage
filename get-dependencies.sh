@@ -30,7 +30,8 @@ if ! wget --retry-connrefused --tries=30 "$DEB_LINK" -O /tmp/app.deb 2>/tmp/down
 	exit 1
 fi
 
-VERSION=$(git ls-remote --tags --sort="v:refname" https://github.com/SpacingBat3/WebCord | tail -n1 | sed 's/.*\///; s/\^{}//; s/^v//')
+VERSION="$(git ls-remote --tags --sort="v:refname" https://github.com/SpacingBat3/WebCord | tail -n1 | sed 's/.*\///; s/\^{}//; s/^v//')"
+echo "$VERSION" > ~/version
 
 ar xvf /tmp/app.deb
 tar -xvf ./data.tar.zst
