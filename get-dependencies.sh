@@ -31,7 +31,7 @@ if ! wget --retry-connrefused --tries=30 "$DEB_LINK" -O /tmp/app.deb 2>/tmp/down
 fi
 
 ar xvf /tmp/app.deb
-tar -xvf ./data.tar.gz
+tar -xvf ./data.tar.zst
 rm -f ./*.gz
 mv -v ./usr ./AppDir
 cp -v ./AppDir/share/applications/webcord.desktop            ./AppDir
