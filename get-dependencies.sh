@@ -4,10 +4,10 @@ set -eu
 
 ARCH=$(uname -m)
 case "$ARCH" in # they use AMD64 and ARM64 for the deb links
-	x86_64)  deb_arch=x64;;
+	x86_64)  deb_arch=amd64;;
 	aarch64) deb_arch=arm64;;
 esac
-DEB_LINK="https://github.com/SpacingBat3/WebCord/releases/download/v4.12.1/webcord_4.12.1_$ARCH.deb"
+DEB_LINK="https://github.com/SpacingBat3/WebCord/releases/download/v4.12.1/webcord_4.12.1_$deb_arch.deb"
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
