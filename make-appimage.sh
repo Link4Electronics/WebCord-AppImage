@@ -12,7 +12,7 @@ export DEPLOY_OPENGL=1
 export DEPLOY_VULKAN=1
 
 # Deploy dependencies
-quick-sharun ./AppDir/bin/webcord
+quick-sharun ./AppDir/lib/webcord/*
 
 # Additional changes can be done in between here
 
