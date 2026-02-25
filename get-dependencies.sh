@@ -38,7 +38,7 @@ fi
 ar xvf /tmp/app.deb
 tar -xvf ./data.tar.zst
 rm -f ./*.gz
-mv -v ./usr ./AppDir
-cp -v ./AppDir/share/applications/webcord.desktop            ./AppDir
-cp -v ./AppDir/share/pixmaps/webcord.png  ./AppDir/.DirIcon
-cp -v ./AppDir/share/pixmaps/webcord.png  ./AppDir
+mv -v ./usr/lib/webcord/* ./AppDir/bin
+cp -v ./usr/share/applications/webcord.desktop            ./AppDir
+cp -v ./usr/share/pixmaps/webcord.png  ./AppDir/.DirIcon
+cp -v ./usr/share/pixmaps/webcord.png  ./AppDir
