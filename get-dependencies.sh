@@ -35,6 +35,7 @@ if ! wget --retry-connrefused --tries=30 "$DEB_LINK" -O /tmp/app.deb 2>/tmp/down
 	exit 1
 fi
 
+mkdir -p ./AppDir/bin
 ar xvf /tmp/app.deb
 tar -xvf ./data.tar.zst
 rm -f ./*.gz
