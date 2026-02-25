@@ -1,10 +1,10 @@
 <div align="center">
 
-# WebCord-AppImage 🐧
+# WebCord-AppImage-Enhanced 🐧
 
-[![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/WebCord-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/WebCord-AppImage/releases/latest)
-[![CI Build Status](https://github.com//pkgforge-dev/WebCord-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/WebCord-AppImage/releases/latest)
-[![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/WebCord-AppImage)](https://github.com/pkgforge-dev/WebCord-AppImage/releases/latest)
+[![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/WebCord-AppImage-Enhanced/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/WebCord-AppImage-Enhanced/releases/latest)
+[![CI Build Status](https://github.com//pkgforge-dev/WebCord-AppImage-Enhanced/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/WebCord-AppImage-Enhanced/releases/latest)
+[![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/WebCord-AppImage-Enhanced)](https://github.com/pkgforge-dev/WebCord-AppImage-Enhanced/releases/latest)
 
 <p align="center">
   <img src="https://github.com/SpacingBat3/WebCord/blob/master/sources/assets/icons/app.png" width="128" />
@@ -13,7 +13,7 @@
 
 | Latest Stable Release | Upstream URL |
 | :---: | :---: |
-| [Click here](https://github.com/pkgforge-dev/WebCord-AppImage/releases/latest) | [Click here](https://github.com/SpacingBat3/WebCord) |
+| [Click here](https://github.com/pkgforge-dev/WebCord-AppImage-Enhanced/releases/latest) | [Click here](https://github.com/SpacingBat3/WebCord) |
 
 </div>
 
